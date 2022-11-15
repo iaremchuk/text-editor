@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS HW16</title>
+    <!-- <link rel="stylesheet" href="/text-editor/css/style.css"> -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="container__top">
+            <div>Lorem ipsum dolor sit amet.</div>
+            <div>Lorem ipsum dolor sit amet.</div>
+            <div>Lorem ipsum dolor sit amet.</div>
+            <div>Lorem ipsum dolor sit amet.</div>
+            <div>Lorem ipsum dolor sit amet.</div>
+        </div>
+        <div class="container__middle">
+            <div class="edit">Edit</div>
+            <div class="style">Style</div>
+        </div>
+        <div class="container__bottom">
+            <div class="editElement">
+                <textarea class="text"></textarea>
+                <div class="btns">
+                    <div class="add">Add</div>
+                    <div class="save">Save</div>
+                </div>
+            </div>
+            <div class="styleElement">
+                <form class="f1" name="form1">
+                    <h4>Font Size:</h4>
+                    <input type="radio" name="font" value="12px" style="margin-right: 5px;" onclick="fontSize()">12px
+                    <input type="radio" name="font" value="14px" class="ml10 mr10" onclick="fontSize()">14px
+                    <input type="radio" name="font" value="16px" class="ml10 mr10" onclick="fontSize()">16px
+                    <input type="radio" name="font" value="18px" class="ml10 mr10" onclick="fontSize()">18px
+                    <input type="radio" name="font" value="20px" class="ml10 mr10" onclick="fontSize()">20px
+                    <h4>Font Family:</h4>
+                    <select name="fontFamily" class="family">
+                        <option value="">Choose option</option>
+                        <option value="cursive">cursive</option>
+                        <option value="fantasy">fantasy</option>
+                        <option value="monospace">monospace</option>
+                        <option value="sens-serif">sens-serif</option>
+                    </select>
+                    <h4>Colors:</h4>
+                    <input type="button" value="Text colour" class="textColor">
+                    <input type="button" value="Background Colour" class="backgroundColor">
+                    <h4>Style:</h4>
+                    <input type="checkbox" onclick="fontStyle()" class="mr10" value="bold">Bold text
+                    <input type="checkbox" onclick="fontStyle()" class="mr10" value="italic"
+                        style="margin-left: 10px;">Cursive text
+                </form>
+                <div class="square">
+                    <p class="red"></p>
+                    <p class="blue"></p>
+                    <p class="green"></p>
+                    <p class="black"></p>
+                    <p class="yellow"></p>
+                    <p class="pink"></p>
+                    <p class="white"></p>
+                    <p class="purple"></p>
+                    <p class="teal"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="choose ">
+        <h2>Choose what you want:</h2>
+        <form name="form2">
+            <input onclick="selectElem()" type="radio" name="choose" value="table" class="mr10">Table
+            <input onclick="selectElem()" type="radio" name="choose" value="list" class="mr10"
+                style="margin-left: 10px;">List
+        </form>
+        <form name="form3" class="showTable">
+            <span style="margin-right: 80px;">Count TR:</span>
+            <input type="text" class="inpStyle trInput">
+            <span style="margin-right: 80px;">Count TD:</span>
+            <input type="text" class="inpStyle tdInput">
+            <h3>Add style to your table:</h3>
+            <span style="margin-right: 63px;">Width of TD:</span>
+            <input type="text" class="inpStyle tdWidth">
+            <span style="margin-right: 60px;">Height of TD:</span>
+            <input type="text" class="inpStyle tdHeight">
+            <span style="margin-right: 43px;">Width of border:</span>
+            <input type="text" placeholder="Width:" class="smlInpStyle tdBorderWidth">
+            <span style="margin-right: 20px; margin-left: 20px;">Type of border:</span>
+            <select class="smlInpStyle tdBorderType">
+                <option value="solid">solid</option>
+                <option value="dotted">dotted</option>
+                <option value="dashed">dashed</option>
+                <option value="double">double</option>
+            </select>
+            <span style="margin-right: 21px; margin-left: 20px;">Color of border:</span>
+            <select class="smlInpStyle tdBorderColor">
+                <option value="black">black</option>
+                <option value="red">red</option>
+                <option value="blue">blue</option>
+                <option value="green">green</option>
+            </select>
+            <div class="createTable">Create table</div>
+        </form>
+        <form name="form4" class="showList">
+            <span style="margin-right: 80px;">Count Li:</span>
+            <input type="text" class="inpStyle liInput">
+            <span style="margin-right: 50px;">Type of marks</span>
+            <select class="inpStyle liMarkType">
+                <option value="circle">circle</option>
+                <option value="disc">disc</option>
+                <option value="square">square</option>
+            </select>
+            <div class="createList">Create list</div>
+        </form>
+    </div>
+    <script src="./script/script.js"></script>
+</body>
+
+</html>

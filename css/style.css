@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 800px;
+    height: 700px;
+    margin: 30px auto;
+    color: gray;
+}
+
+.container__top,
+.container__bottom,
+.choose {
+    min-height: 45%;
+    width: 100%;
+    border: 1px solid rgb(134, 151, 158);
+    background-color: rgb(216, 236, 245);
+    border-radius: 2px;
+    padding: 20px;
+}
+
+.container__middle {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit,
+.style,
+.add,
+.save,
+.createTable,
+.createList {
+    height: 40px;
+    width: 60px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+    margin-left: 5px;
+}
+
+.edit {
+    background-color: orange;
+}
+
+.style {
+    background-color: rgb(64, 196, 196);
+    color: white;
+}
+
+.edit:hover {
+    cursor: pointer;
+    background-color: rgb(215, 158, 51);
+}
+
+.style:hover {
+    cursor: pointer;
+    background-color: rgb(77, 139, 139);
+}
+
+.text {
+    height: 150px;
+    width: 750px;
+    border-radius: 2px;
+    outline: none;
+    border: 1px solid rgb(134, 151, 158);
+}
+
+.btns {
+    display: flex;
+    margin-top: 20px;
+}
+
+.editElement {
+    display: none;
+}
+
+.add {
+    background-color: red;
+    color: white;
+}
+
+.save,
+.createTable,
+.createList {
+    background-color: green;
+    color: white;
+}
+
+.add:hover {
+    cursor: pointer;
+    background-color: rgb(172, 63, 63);
+}
+
+.save:hover,
+.createTable:hover {
+    cursor: pointer;
+    background-color: rgb(59, 103, 59);
+}
+
+.styleElement {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.f1 h4,
+input,
+select {
+    margin-top: 10px;
+}
+
+.ml10 {
+    margin-left: 10px;
+}
+
+.mr10 {
+    margin-right: 5px;
+}
+
+.family {
+    width: 250px;
+    border: 1px solid rgb(134, 151, 158);
+    border-radius: 2px;
+    padding: 20px;
+    font-size: 15px;
+    height: 40px;
+    line-height: 40px;
+    color: gray;
+}
+
+.textColor,
+.backgroundColor {
+    height: 40px;
+    width: 120px;
+    color: white;
+    background-color: grey;
+    border-radius: 10px;
+    border: none;
+}
+
+.textColor:hover,
+.backgroundColor:hover {
+    background-color: rgb(147, 141, 141);
+    cursor: pointer;
+}
+
+.square {
+    height: 150px;
+    width: 150px;
+    display: none;
+    flex-wrap: wrap;
+}
+
+.square p {
+    height: 50px;
+    width: 50px;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.black {
+    background-color: black;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.white {
+    background-color: white;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.teal {
+    background-color: teal;
+}
+
+.choose {
+    display: none;
+    width: 800px;
+    height: 500px;
+    margin: 30px auto;
+    color: gray;
+}
+
+.showTable {
+    display: none;
+}
+
+.showList {
+    display: none;
+}
+
+.inpStyle {
+    height: 40px;
+    width: 600px;
+    border: 1px solid rgb(134, 151, 158);
+    border-radius: 2px;
+    padding: 20px;
+}
+
+.smlInpStyle {
+    border: 1px solid rgb(134, 151, 158);
+    border-radius: 2px;
+    padding: 20px;
+    font-size: 15px;
+    height: 40px;
+    line-height: 40px;
+    color: gray;
+    width: 100px;
+}
+
+.createTable,
+.createList {
+    width: 150px;
+    margin-left: 0;
+    margin-top: 20px;
+}
+
+li {
+    margin-left: 20px;
+}
